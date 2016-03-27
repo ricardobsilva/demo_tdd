@@ -1,7 +1,7 @@
 FactoryGirl.define do
   factory :band do
-    name "MyString"
-    musical_genre "MyString"
-    site "MyString"
+    name {Faker::Name.name}
+    musical_genre {Faker::Name.title}
+    site {Faker::Internet.url}
   end
 end
